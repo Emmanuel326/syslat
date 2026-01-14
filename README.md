@@ -142,6 +142,15 @@ These are **deliberate design limits**:
 
 ---
 
+
+## Test Data
+
+Benchmarks use a regular on-disk test file created as:
+
+```bash
+dd if=/dev/zero of=testfile bs=1M count=64
+
+
 ## Cache State Control
 
 Page cache state is treated as **experimental input**, not environment
