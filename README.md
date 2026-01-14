@@ -136,6 +136,9 @@ These are **deliberate design limits**:
 - Fixed read sizes (e.g. 4 KiB, 64 KiB)
 - Fixed iteration counts per run
 - Results reported as latency distributions (p50, p99, max)
+- Benchmarks are executed with CPU affinity pinned to a single logical core
+  using `taskset` to reduce scheduler migration noise.
+
 
 ---
 
